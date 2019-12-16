@@ -8,18 +8,23 @@ var blankSpace = [];
 
 // Make array for words for game
 
-var wordArray = ["banana", "aardvark", "jimmy", "apple pie", "oscar", "philipe", "connor", "mathbook", "encyclopedia", "super dope funk town"]
+var wordArray = ["stimpy", "johnny"];
 
-// computer chooses random word.
 
-var compWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+        // computer chooses random word.
+
+var compWord = wordArray[Math.floor(Math.random() * wordArray.length)].toLowerCase();
 console.log(compWord);
 
 for (var i = 0; i < compWord.length; i++) {
     blankSpace[i] = "_";
+    if (compWord === wordArray[0].toLowerCase()) {
+        document.getElementById("hint").innerHTML= "Bestfriend of Ren."
+    } else if (compWord === wordArray[1].toLowerCase()) {
+        document.getElementById("hint").innerHTML= "Surname Bravo."
+    }
 }
 console.log(blankSpace);
 
-// var gameBoard = document.getElementById("gameboard")
-
-document.getElementById("gameboard").innerHTML="" + blankSpace.join(" "); 
+document.getElementById("gameboard").innerHTML="" + blankSpace.join(" ");
+ 
