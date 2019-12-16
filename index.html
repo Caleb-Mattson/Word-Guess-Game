@@ -10,15 +10,20 @@
     <title>Guess That Word!</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="banner">
         <div id="imgHint"></div>
     </div>
 
-    <div id="gameboard"></div>
-    <br><br>
+    <div id="interactive-box">
+        <div class="input" id="gameboard"></div>
+        
 
-    <div id="hint"></div>
+        <div class="input" id="hint"></div>
 
+        <p class="input">Incorrect Guesses: <span id="incorrectGuess"></span></p>
+    
+        <button onClick="location.reload();">Try New Pokemon!</button>
+    </div>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>
