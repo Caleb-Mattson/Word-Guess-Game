@@ -13,38 +13,33 @@ var wordArray = ["bulbasaur", "caterpie",
 ];
 
 
-        // computer chooses random word.
+// computer chooses random word.
 
 var compWord = wordArray[Math.floor(Math.random() * wordArray.length)].toLowerCase();
 console.log(compWord);
 
+// create for loop to display chosen word as _ 
+
 for (var i = 0; i < compWord.length; i++) {
-    var img = document.createElement(img);
-    
+
     blankSpace[i] = "_";
+ 
     if (compWord === wordArray[0].toLowerCase()) {
-        img.src = '../images/bulbasaur.png';
-        document.getElementById("imgHint").appendChild(img);
+        document.getElementById("imgHint").innerHTML = "<img src='assets/images/bulbasaur.png'>";
         document.getElementById("hint").innerHTML= "Bestfriend of Ren.";
     } else if (compWord === wordArray[1].toLowerCase()) {
-        img.src = '../images/caterpie.png';
-        document.getElementById("imgHint").appendChild(img);
+        document.getElementById("imgHint").innerHTML = "<img src='assets/images/caterpie.png'>";
         document.getElementById("hint").innerHTML= "Surname Bravo.";
     }
 }
 console.log(blankSpace);
 
 document.getElementById("gameboard").innerHTML="" + blankSpace.join(" ");
+
+// create loop to display proper image for selected guess word.
+
+
+
+
  
-var imgArray = new Array();
 
-        imgArray[0] = new Image();
-        imgArray[0].src = 'assets/images/bulbasaur.png';
-
-        imgArray[1] = new Image();
-        imgArray[1].src = 'assets/images/caterpie.png';
-
-        /* ... more images ... */
-
-        imgArray[5] = new Image();
-        imgArray[5].src = '';
