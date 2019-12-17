@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
-    <title>Guess That Word!</title>
+    <title>Who's That Pokemon!</title>
 </head>
 <body>
     <div class="container" id="banner">
@@ -16,7 +16,7 @@
 
     <div id="interactive-box">
         <div id="scoreBoard">
-            <div>Guesses Remain: <span id="guessLeft"></span></div>
+            <div>Guesses Remain: <br><span id="guessLeft"></span></div>
         </div>
         <br><br><br>
 
@@ -27,9 +27,10 @@
 
         <p class="input">Incorrect Guesses: <span id="incorrectGuess"></span></p>
     
-        <button onClick="location.reload();">Try Again?</button>
-        
+        <button onClick="location.reload();">Try Again?</button>        
     </div>
+
+    <div id="lost"></div>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>

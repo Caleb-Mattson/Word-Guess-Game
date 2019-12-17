@@ -46,14 +46,36 @@ body {
 }
 
 button {
+    z-index: 200;
     background: grey;
     font-size: 36px;
     margin: 20px;
     margin-bottom: 0;
     border-radius: 8px;
+    
 }
 
 .input {
     padding: 10px;
     font-size: 24px;
+}
+
+#lostExecute {
+    z-index: 100;
+    background: red;
+    position: absolute;
+    top: 0;
+    padding-top: 20%;
+    height: 100%;
+    width: 100%;
+    max-width:1800px;
+    max-height: 1000px;
+    text-align: center;
+    font-size: 48px;
+    margin: 0 auto;
+
+}
+
+#button {
+    font-size: 64px;
 }
