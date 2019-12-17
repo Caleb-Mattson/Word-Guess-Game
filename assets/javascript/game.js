@@ -9,7 +9,7 @@ var blankSpace = [];
 // Make array for words for game
 
 var wordArray = ["bulbasaur", "caterpie",
-    // "charmander", "cubone", "diglett", "eevee", "ekans", "magikarp", "meowth", "mewtwo", "oddish", "onix", "pikachu", "psyduck", "raichu", "snorlax", "squirtle", "zubat"
+    "charmander", "cubone", "diglett", "eevee", "ekans", "magikarp", "meowth", "mewtwo", "oddish", "onix", "pikachu", "psyduck", "raichu", "snorlax", "squirtle", "zubat"
 ];
 
 
