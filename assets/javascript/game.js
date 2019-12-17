@@ -18,6 +18,10 @@ var wordArray = ["bulbasaur", "caterpie",
 var compWord = wordArray[Math.floor(Math.random() * wordArray.length)].toLowerCase();
 console.log(compWord);
 
+document.getElementById("guessLeft").innerHTML = guessLeft;
+
+
+
 // create for loop to display chosen word as _ 
 
 for (var i = 0; i < compWord.length; i++) {
