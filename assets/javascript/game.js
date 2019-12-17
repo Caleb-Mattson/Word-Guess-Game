@@ -9,7 +9,7 @@ var blankSpace = [];
 // Make array for words for game
 
 var wordArray = ["bulbasaur", "caterpie",
-    "charmander", "cubone", "diglett", "eevee", "ekans", "magikarp", "meowth", "mewtwo", "oddish", "onix", "pikachu", "psyduck", "raichu", "snorlax", "squirtle", "zubat"
+    // "charmander", "cubone", "diglett", "eevee", "ekans", "magikarp", "meowth", "mewtwo", "oddish", "onix", "pikachu", "psyduck", "raichu", "snorlax", "squirtle", "zubat"
 ];
 
 
@@ -105,6 +105,10 @@ for (var i = 0; i < compWord.length; i++) {
             }
             if (guessLeft === 0) {
                 document.getElementById("lost").innerHTML = "<p id='lostExecute'>WHY WOULD YOU KILL THAT POOR POKEMON!?!<br><button onClick='location.reload();' id='button'>Abuse another pokemon? You monster!</button> </p>";
+
+            }
+            if (userGuess === compWord.length) {
+                document.getElementById("won").innerHTML = "<p id='lostExecute'>WHY WOULD YOU KILL THAT POOR POKEMON!?!<br><button onClick='location.reload();' id='button'>Abuse another pokemon? You monster!</button> </p>";
 
             }
         }
