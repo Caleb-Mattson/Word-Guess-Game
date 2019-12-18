@@ -1,7 +1,7 @@
 // declare variables for wins, losses, remaining guesses, guesses thus far, and displaying blank spaces.
 
 
-var guessLeft = 12;
+var guessLeft = 6;
 var guessUsed = [];
 var blankSpace = [];
 
@@ -17,6 +17,8 @@ var wordArray = ["bulbasaur", "caterpie",
 
 var compWord = wordArray[Math.floor(Math.random() * wordArray.length)].toLowerCase();
 console.log(compWord);
+
+var wordLength = compWord.length;
 
 document.getElementById("guessLeft").innerHTML = guessLeft;
 
@@ -91,6 +93,8 @@ for (var i = 0; i < compWord.length; i++) {
 
         for (var i = 0; i < compWord.length; i++) {
             if (userGuess === compWord[i]) {
+                wordLength--;
+                console.log(wordLength);
                 isGuessWrong = false;
                 blankSpace[i] = userGuess;
                 document.getElementById("gameboard").innerHTML = " " + blankSpace.join(" ");
@@ -107,10 +111,13 @@ for (var i = 0; i < compWord.length; i++) {
                 document.getElementById("lost").innerHTML = "<p id='lostExecute'>WHY WOULD YOU KILL THAT POOR POKEMON!?!<br><button onClick='location.reload();' id='button'>Abuse another pokemon? You monster!</button> </p>";
 
             }
-            if (userGuess === compWord.length) {
-                document.getElementById("won").innerHTML = "<p id='lostExecute'>WHY WOULD YOU KILL THAT POOR POKEMON!?!<br><button onClick='location.reload();' id='button'>Abuse another pokemon? You monster!</button> </p>";
 
-            }
+        
+        }
+
+        if (wordLength === 0) {
+            document.getElementById("won").innerHTML = "<p id='winExecute'>Congratulations!<br> You saved your pokemon!<br><button onClick='location.reload();' id='button'>Test your knowledge again?</button> </p>";
+
         }
 
 

@@ -76,6 +76,22 @@ button {
 
 }
 
+#winExecute {
+    z-index: 100;
+    background: greenyellow;
+    position: absolute;
+    top: 0;
+    padding-top: 20%;
+    height: 100%;
+    width: 100%;
+    max-width:2000px;
+    max-height: 1000px;
+    text-align: center;
+    font-size: 48px;
+    margin: 0 auto;
+
+}
+
 #button {
     font-size: 64px;
 }
