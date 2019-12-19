@@ -112,7 +112,7 @@ for (var i = 0; i < compWord.length; i++) {
 
             }
 
-        
+
         }
 
         if (wordLength === 0) {
