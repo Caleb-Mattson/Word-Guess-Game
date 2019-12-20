@@ -63,7 +63,7 @@ button {
 #lostExecute {
     z-index: 100;
     background: red;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-top: 20%;
     height: 100%;
@@ -79,7 +79,7 @@ button {
 #winExecute {
     z-index: 100;
     background: greenyellow;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-top: 20%;
     height: 100%;
